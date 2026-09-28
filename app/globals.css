@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/*
+  Tokens de Realidad Nacional.
+  Paleta tomada del sitio de la Facultad Politécnica (pol.una.py).
+  El diseño aprobado es solo claro; no hay tema oscuro todavía.
+*/
+@theme {
+  /* superficies */
+  --color-page: #f4f7fb;
+  --color-surface: #ffffff;
+  --color-deep: #0b2740;
+  --color-footer: #0f1720;
+
+  /* texto */
+  --color-ink: #0f1720;
+  --color-ink-soft: #1f2a35;
+  --color-body: #3b4956;
+  --color-muted: #64727f;
+  --color-faint: #8896a3;
+
+  /* bordes */
+  --color-line: #e6edf4;
+  --color-line-soft: #eff3f8;
+
+  /*
+    Azul institucional FP-UNA.
+    brand    #357CBD  marcas de gráficos, tintes, texto de 24px o más
+    action   #1B6BB8  botones y enlaces de texto (5.5:1 sobre blanco)
+    dark     #14508C  títulos sobre tinte
+    No usar `brand` para texto chico sobre blanco: da 4.4:1 y no llega al mínimo.
+  */
+  --color-brand: #357cbd;
+  --color-brand-action: #1b6bb8;
+  --color-brand-dark: #14508c;
+  --color-brand-bright: #1890d7;
+  --color-brand-tint: #e8f1fa;
+
+  /* estados de publicación y temas */
+  --color-warm: #d2691e;
+  --color-warm-tint: #fcede2;
+  --color-warm-ink: #92460f;
+  --color-teal: #0f9b8e;
+  --color-teal-tint: #e1f3f1;
+  --color-teal-ink: #0a5f59;
+
+  /* series de gráficos — validadas para daltonismo y contraste */
+  --color-chart-1: #357cbd;
+  --color-chart-2: #d2691e;
+  --color-chart-3: #0f9b8e;
+
+  /* tipografías */
+  --font-display: var(--font-jakarta), system-ui, sans-serif;
+  --font-body: var(--font-lato), system-ui, sans-serif;
+  --font-label: var(--font-titillium), system-ui, sans-serif;
+
+  /* radios */
+  --radius-card: 22px;
+  --radius-panel: 26px;
+  --radius-control: 13px;
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
